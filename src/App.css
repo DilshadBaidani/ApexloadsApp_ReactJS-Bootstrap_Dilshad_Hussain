@@ -1,0 +1,387 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+.header .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.header .contact-info i {
+  margin-right: 5px;
+}
+
+.header .login .btn {
+  font-size: 0.9rem;
+  border: none;
+  padding: 5px 12px;
+}
+
+@media (max-width: 768px) {
+  .header .contact-info {
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+.navbar .navbar-brand img {
+  height: 50px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 1rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #dc3545;
+}
+
+.navbar-buttons .btn {
+  font-size: 0.9rem;
+  margin: 0 5px;
+}
+
+.navbar-buttons .btn-outline-light {
+  border: 1px solid #ffffff;
+}
+
+.navbar-buttons .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Navbar on Mobile */
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 10px 0;
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-buttons .btn {
+    margin: 5px 0;
+  }
+}
+
+.scroll-top {
+  font-size: 20px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  padding: 8px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: #bb2d3b;
+}
+
+.pricing-header {
+  height: 300px;
+  background-image: url('./image\ 5.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pricing-header .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-header h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.pricing-section {
+  background-color: #000000;
+  padding: 50px 0;
+}
+
+.pricing-section .card {
+  background-color: #292929;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+.pricing-section .card:hover {
+  background-color: #dc3545;
+}
+
+.pricing-section .price {
+  color: #dc3545;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.pricing-section .card:hover .price {
+  color: #ffffff;
+}
+
+.pricing-section .btn2 {
+  background-color: #dc3545;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  height: 50px;
+}
+
+.pricing-section .btn2:hover {
+  background-color: black;
+  color: white;
+}
+
+.pricing-btn {
+  background-color: #292929;
+  color: white;
+
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pricing-btn:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .pricing-btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing-btn {
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    border-radius: 15px;
+  }
+}
+.download {
+  position: relative;
+  height: 100vh;
+  background-image: url('image\ 4.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.download .content {
+  z-index: 2;
+  color: white;
+}
+
+.download h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 480px;
+  z-index: 2;
+  margin-top: 200px;
+}
+
+.store-btn img {
+  max-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .download h1 {
+    font-size: 2.2rem;
+  }
+
+  .download-buttons {
+    gap: 30px;
+    margin-top: 150px;
+  }
+
+  .store-btn img {
+    max-width: 170px;
+  }
+}
+
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 50px 0;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  max-width: 300px;
+}
+
+.feedback-link {
+  margin-bottom: 15px;
+  font-size: 0.85rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.support-form input {
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+}
+
+.support-form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.support-form .btn {
+  background-color: #dc3545;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.support-form .btn:hover {
+  background-color: #a82332;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Links */
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #dc3545;
+}
+
+.scroll-top {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.scroll-top:hover {
+  color: #dc3545;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer .row {
+    text-align: center;
+  }
+  .footer .col-md-4,
+  .footer .col-md-2 {
+    margin-bottom: 30px;
+  }
+}
